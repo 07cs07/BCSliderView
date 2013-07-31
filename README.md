@@ -3,7 +3,7 @@
 
 BCSliderView is a animating slider view.
 
-![iOSValidator framework screen](https://github.com/07cs07/BCSliderView/blob/master/ScreenShot.png)
+![iOSValidator framework screen](https://raw.github.com/07cs07/BCSliderView/master/ScreenShot.png)
 
 ### ARC Support ###
 ***BCSliderView*** supports ***ARC*** and for non-ARC users just add the `-fobjc-arc` compiler flag to the BCSliderView files.
@@ -38,8 +38,8 @@ BCSliderView is a animating slider view.
 
 *BCSliderView has two methods*
 
-- **- (void)slideToValue:(int)value;** This lets you to update the time in UI for every secs.
+- **- (void)slideToValue:(int)value;** This lets you to slide to the desired value given.
 
-- **- (void)slideBack;** This lets you to update the current lap of the timer.
+- **- (void)slideBack;** This lets you to slide back to the previous value.
 
  
