@@ -18,6 +18,8 @@
 		2C0D3A4417A8DC0900394513 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0D3A4317A8DC0900394513 /* Default-568h@2x.png */; };
 		2C0D3A4717A8DC0900394513 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0D3A4517A8DC0900394513 /* MainStoryboard.storyboard */; };
 		2C0D3A4A17A8DC0900394513 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0D3A4917A8DC0900394513 /* ViewController.m */; };
+		2C0D3A5217A8DC3100394513 /* BCSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0D3A5117A8DC3100394513 /* BCSliderView.m */; };
+		2C0D3A5417A8DDE000394513 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0D3A5317A8DDE000394513 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		2C0D3A4617A8DC0900394513 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		2C0D3A4817A8DC0900394513 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2C0D3A4917A8DC0900394513 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C0D3A5017A8DC3100394513 /* BCSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSliderView.h; sourceTree = "<group>"; };
+		2C0D3A5117A8DC3100394513 /* BCSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSliderView.m; sourceTree = "<group>"; };
+		2C0D3A5317A8DDE000394513 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0D3A5417A8DDE000394513 /* QuartzCore.framework in Frameworks */,
 				2C0D3A2E17A8DC0900394513 /* UIKit.framework in Frameworks */,
 				2C0D3A3017A8DC0900394513 /* Foundation.framework in Frameworks */,
 				2C0D3A3217A8DC0900394513 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +62,8 @@
 		2C0D3A2117A8DC0900394513 = {
 			isa = PBXGroup;
 			children = (
+				2C0D3A5017A8DC3100394513 /* BCSliderView.h */,
+				2C0D3A5117A8DC3100394513 /* BCSliderView.m */,
 				2C0D3A3317A8DC0900394513 /* BCSliderDemo */,
 				2C0D3A2C17A8DC0900394513 /* Frameworks */,
 				2C0D3A2B17A8DC0900394513 /* Products */,
@@ -73,6 +81,7 @@
 		2C0D3A2C17A8DC0900394513 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C0D3A5317A8DDE000394513 /* QuartzCore.framework */,
 				2C0D3A2D17A8DC0900394513 /* UIKit.framework */,
 				2C0D3A2F17A8DC0900394513 /* Foundation.framework */,
 				2C0D3A3117A8DC0900394513 /* CoreGraphics.framework */,
@@ -176,6 +185,7 @@
 				2C0D3A3A17A8DC0900394513 /* main.m in Sources */,
 				2C0D3A3E17A8DC0900394513 /* AppDelegate.m in Sources */,
 				2C0D3A4A17A8DC0900394513 /* ViewController.m in Sources */,
+				2C0D3A5217A8DC3100394513 /* BCSliderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BCSliderView.h"
 
 @interface ViewController : UIViewController
+{
+    CALayer *frontLayer;
+    CALayer *backLayer;
+    BCSliderView *sliderView;
+    BCSliderView *sliderView1;
+}
+
+- (IBAction)slide:(id)sender;
+- (IBAction)slideToPrevious:(id)sender;
 
 @end
