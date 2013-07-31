@@ -3,7 +3,7 @@
 **BCSliderView** is a animating slider view.
 **BCSliderView** supports ***ARC*** and for non-ARC users just add the `-fobjc-arc` compiler flag to the BCSliderView files.
 
-![BCSliderView screen](https://raw.github.com/07cs07/BCSliderView/master/ScreenShot.png)
+![BCSliderView screen](https://raw.github.com/07cs07/BCSliderView/master/ScreenShot.gif)
 
 ### How to use it
 
@@ -21,18 +21,14 @@
     sliderView = [[BCSliderView alloc] initWithFrame:CGRectMake(10, 100, 100, 100)];
     sliderView.defaultValue = 7;
     [self.view addSubview:sliderView];
-
+```
+ **- (void)slideToValue:(int)value;** *This lets you to slide to the desired value given.*
+```objective-c
 	// this will slide to the value given
     [sliderView slideToValue:value]; 
-
+```
+ **- (void)slideBack;** *This lets you to slide back to the previous value.*
+```objective-c
 	// this will slide back to the previous value
     [sliderView slideBack]; 
 ```
-
-*BCSliderView has two methods*
-
-- **- (void)slideToValue:(int)value;** This lets you to slide to the desired value given.
-
-- **- (void)slideBack;** This lets you to slide back to the previous value.
-
- 
