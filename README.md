@@ -1,23 +1,16 @@
 # BCSliderView #
-=========
 
-BCSliderView is a animating slider view.
+**BCSliderView** is a animating slider view.
+**BCSliderView** supports ***ARC*** and for non-ARC users just add the `-fobjc-arc` compiler flag to the BCSliderView files.
 
-![iOSValidator framework screen](https://raw.github.com/07cs07/BCSliderView/master/ScreenShot.png)
-
-### ARC Support ###
-***BCSliderView*** supports ***ARC*** and for non-ARC users just add the `-fobjc-arc` compiler flag to the BCSliderView files.
-
-### Installation ###
-
-### Frameworks :
-- **QuartzCore**
+![BCSliderView screen](https://raw.github.com/07cs07/BCSliderView/master/ScreenShot.png)
 
 ### How to use it
 
-1. Drag-and-drop BCSliderView(.h and .m) them into your Xcode project.
-2. Tick the **Copy items into destination group's folder** option.
-3. Use `#import "BCSliderView.h"` in  your source files.
+1. Add **QuartzCore** framework to your project.
+2. Drag-and-drop BCSliderView(.h and .m) them into your Xcode project.
+3. Tick the **Copy items into destination group's folder** option.
+4. Use `#import "BCSliderView.h"` in  your source files.
 
 ### Sample Code
 	
