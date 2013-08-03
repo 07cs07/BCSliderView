@@ -20,6 +20,8 @@
 		2C0D3A4A17A8DC0900394513 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0D3A4917A8DC0900394513 /* ViewController.m */; };
 		2C0D3A5217A8DC3100394513 /* BCSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0D3A5117A8DC3100394513 /* BCSliderView.m */; };
 		2C0D3A5417A8DDE000394513 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0D3A5317A8DDE000394513 /* QuartzCore.framework */; };
+		2C23DC6517ACC7AC00DD4452 /* ScreenShot.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C23DC6317ACC7AC00DD4452 /* ScreenShot.gif */; };
+		2C23DC6617ACC7AC00DD4452 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C23DC6417ACC7AC00DD4452 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		2C0D3A5017A8DC3100394513 /* BCSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSliderView.h; sourceTree = "<group>"; };
 		2C0D3A5117A8DC3100394513 /* BCSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSliderView.m; sourceTree = "<group>"; };
 		2C0D3A5317A8DDE000394513 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2C23DC6317ACC7AC00DD4452 /* ScreenShot.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenShot.gif; sourceTree = "<group>"; };
+		2C23DC6417ACC7AC00DD4452 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 		2C0D3A2117A8DC0900394513 = {
 			isa = PBXGroup;
 			children = (
+				2C23DC6317ACC7AC00DD4452 /* ScreenShot.gif */,
+				2C23DC6417ACC7AC00DD4452 /* README.md */,
 				2C0D3A5017A8DC3100394513 /* BCSliderView.h */,
 				2C0D3A5117A8DC3100394513 /* BCSliderView.m */,
 				2C0D3A3317A8DC0900394513 /* BCSliderDemo */,
@@ -172,6 +178,8 @@
 				2C0D3A4217A8DC0900394513 /* Default@2x.png in Resources */,
 				2C0D3A4417A8DC0900394513 /* Default-568h@2x.png in Resources */,
 				2C0D3A4717A8DC0900394513 /* MainStoryboard.storyboard in Resources */,
+				2C23DC6517ACC7AC00DD4452 /* ScreenShot.gif in Resources */,
+				2C23DC6617ACC7AC00DD4452 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +316,7 @@
 				2C0D3A4F17A8DC0900394513 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -43,7 +43,6 @@
 - (id)initWithFrame:(CGRect)frame;
 
 - (void)slideToValue:(int)value;
-
-- (void)slideBack;
+- (void)slideBackToValue:(int)value;
 
 @end

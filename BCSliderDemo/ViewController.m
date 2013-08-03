@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Mobs and Geeks. All rights reserved.
 //
 
-static int val = 1;
+static int val = 0;
 
 #import "ViewController.h"
 
@@ -20,13 +20,9 @@ static int val = 1;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    sliderView = [[BCSliderView alloc] initWithFrame:CGRectMake(10, 150, 100, 100)];
-    sliderView.defaultValue = 7;
+    sliderView = [[BCSliderView alloc] initWithFrame:CGRectMake(110, 150, 100, 100)];
+    sliderView.defaultValue = val;
     [self.view addSubview:sliderView];
-    
-    sliderView1 = [[BCSliderView alloc] initWithFrame:CGRectMake(230, 180, 30, 30)];
-    sliderView1.defaultValue = 5;
-    [self.view addSubview:sliderView1];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,18 +33,18 @@ static int val = 1;
 
 #pragma mark - BCSlideView
 
-- (IBAction)slide:(id)sender
+- (IBAction)slideToNext:(id)sender
 {
-    [sliderView slideToValue:val];
-    [sliderView1 slideToValue:val];
     val++;
     val = val < 10 ? val:0;
+    [sliderView slideToValue:val];
 }
 
 - (IBAction)slideToPrevious:(id)sender
 {
-    [sliderView slideToValue:val-2];
-    [sliderView1 slideToValue:val-2];
+    val--;
+    val = val < 0 ? 9 : val;
+    [sliderView slideBackToValue:val];
 }
 
 @end

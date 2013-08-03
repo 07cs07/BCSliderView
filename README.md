@@ -25,10 +25,10 @@
  **- (void)slideToValue:(int)value;** *This lets you to slide to the desired value given.*
 ```objective-c
 	// this will slide to the value given
-    [sliderView slideToValue:value]; 
+    [sliderView slideToValue:value];
 ```
- **- (void)slideBack;** *This lets you to slide back to the previous value.*
+ **- (void)slideBackToValue:(int)value;** *This lets you to slide back to the value given.*
 ```objective-c
 	// this will slide back to the previous value
-    [sliderView slideBack]; 
+    [sliderView slideBackToValue:value];
 ```

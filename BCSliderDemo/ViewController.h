@@ -11,13 +11,10 @@
 
 @interface ViewController : UIViewController
 {
-    CALayer *frontLayer;
-    CALayer *backLayer;
     BCSliderView *sliderView;
-    BCSliderView *sliderView1;
 }
 
-- (IBAction)slide:(id)sender;
+- (IBAction)slideToNext:(id)sender;
 - (IBAction)slideToPrevious:(id)sender;
 
 @end

@@ -46,16 +46,15 @@
     
     [labelTextLayer setFontSize:fontSize];
     [labelTextLayer setFrame:_layerFrame];
-    [labelTextLayer setBackgroundColor:[UIColor blackColor].CGColor];
     [labelTextLayer setString:[NSString stringWithFormat:@"%d",_value]];
     [labelTextLayer setAlignmentMode:kCAAlignmentCenter];
     [labelTextLayer setForegroundColor:[[UIColor whiteColor] CGColor]];
     [labelTextLayer setShadowColor:[UIColor whiteColor].CGColor];
     [labelTextLayer setShadowOffset:CGSizeMake(0,1)];
     [labelTextLayer setCornerRadius:4];
-    [labelTextLayer setBorderColor:[UIColor grayColor].CGColor];
     [labelTextLayer setBorderWidth:4];
-
+    [labelTextLayer setBorderColor:[[UIColor colorWithRed:(float)118/255 green:(float)117/255 blue:(float)117/255 alpha:1] CGColor]];
+    [labelTextLayer setBackgroundColor:[UIColor colorWithRed:(float)36/255 green:(float)38/255 blue:(float)42/255 alpha:1].CGColor];
     [layer addSublayer:labelTextLayer];
 }
 
@@ -75,7 +74,7 @@
     if (self)
     {    
         CGRect layerRect = self.bounds;
-
+        self.backgroundColor = [UIColor clearColor];
         layerDelegate = [[MyLayerDelegate alloc] initWithLayerFrame:layerRect];
         layerDelegate.value = 0;
         [self setDefaultLayers];
@@ -117,10 +116,20 @@
 
 - (void)slideToValue:(int)value
 {
+    [self.layer removeAllAnimations];
     [layerDelegate setValue:value];
     [backLayer setNeedsDisplay];
     
     [self performSelector:@selector(changeFrontLayer) withObject:nil afterDelay:0.01];
+}
+
+- (void)slideBackToValue:(int)value
+{
+    [self.layer removeAllAnimations];
+    [layerDelegate setValue:value];
+    [backLayer setNeedsDisplay];
+    
+    [self performSelector:@selector(slideBack) withObject:nil afterDelay:0.01];
 }
 
 - (void)slideBack
@@ -167,7 +176,7 @@
         [backLayer addAnimation:transformAnimation forKey:nil];
         
         CATransform3D  backTransform = CATransform3DIdentity;
-        backTransform = CATransform3DTranslate(backTransform, 0, 0, -10);
+        backTransform = CATransform3DTranslate(backTransform, 0, 0, -20);
         CABasicAnimation *tran = [CABasicAnimation animationWithKeyPath: @"transform"];
         tran.delegate = self;
         tran.fillMode = kCAFillModeForwards;
@@ -187,11 +196,11 @@
         transformAnimation.fillMode = kCAFillModeForwards;
         transformAnimation.removedOnCompletion = NO;
         transformAnimation.toValue = [NSValue valueWithCATransform3D:rootTransform];
-        transformAnimation.duration = 0.1;
+        transformAnimation.duration = 0.01f;
         [backLayer addAnimation:transformAnimation forKey:nil];
         
         CATransform3D  backTransform = CATransform3DIdentity;
-        backTransform = CATransform3DTranslate(backTransform, 0, 0, -10);
+        backTransform = CATransform3DTranslate(backTransform, 0, 0, -20);
         CABasicAnimation *tran = [CABasicAnimation animationWithKeyPath: @"transform"];
         tran.delegate = self;
         tran.fillMode = kCAFillModeForwards;
